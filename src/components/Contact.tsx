@@ -64,7 +64,9 @@ const Contact = ({ setSelectedPage }: ContactProps) => {
             <form
               target="_blank"
               onSubmit={onSubmit}
-              action="https://formsubmit.co/6300f1811bbac2448d80a0edbbdcbe77"
+              action={`https://formsubmit.co/${
+                import.meta.env.VITE_MAIL_STRING
+              }`}
               method="POST"
               className="p-8 bg-primary-100 rounded-lg shadow-lg"
             >
